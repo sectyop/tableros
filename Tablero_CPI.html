@@ -69,16 +69,16 @@
             height: 100%;
         }
 
-	.staticrypt-body {
-		background-image: url('BuenosAires.jpg');
-		background-attachment: fixed;
-		color: #333;
-		margin-bottom: 1em;
-		font-family: "Arial", sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+		.staticrypt-body {
+			background-image: url('BuenosAires.jpg');
+			background-attachment: fixed;
+			color: #333;
+			margin-bottom: 1em;
+			font-family: "Arial", sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 
-	}
+		}
 
         .staticrypt-instructions {
             margin-top: -1em;
@@ -129,7 +129,7 @@
                    placeholder="Contraseña..."
                    autofocus/>
 
-            <input type="submit" class="staticrypt-decrypt-button" value="INGRESAR"/>
+            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
         </form>
     </div>
 
@@ -6163,7 +6163,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'e974585735df96bf512fb76c4dd2f482cbdd1b4fd8743792bb286e4593c8767f4c3b00c32d624221435b3d754075fd3499b851b8bc0239bf685edacf9d2a2ee1pd7/BQfXw1NZ2ERgKA0/uedOnB7cgZgi8QqiAvgt9cMqvha8x+polvmrLsWDrdSOvwzxdpePh4WjpnX2vwDed3XJLyiQ7kc613goPLCQ9KeRDyqwdk8jTjyGXW9vp5QNBfmiTfMLqcon3NilGML17w3ZoUEojoD1zWQxXSSrU4qdU5nLHnZQ13KGv57GiDso26C2+aVdqysrEevtFXmTvqw3Td4p9bMtBQO9o/Hv4a9Je0XYF+gIRSP3AC+rgUMx71WipNohZnOKHT/TifkKJP8z3MjEfDD/wBsLEwO6RJ2ii7i21TayU9oPKTyvw0qDRo4CV11tYVOIXq/RGHji2MJjkKNKCD87+w5N+2IHEVYYM2sSNULwL/pq9kPV01n9f97A97wTcW/HDac5l7K2f+wM0R+oCXLUdA+ZO/FFlU85OPruX8I6Av5dyIN5SUXSDZi+M2aElnhdaZyF+6DWoQ1PsyRa2M+TvcDtNynCss0+GexfcI+QlD9OryDdkNQQbSFdfBt3fxe07oQ4OMKDqgxASYs1zL/6AxL0DnzDVI/jJeuEnyTxpPGSoYyavvu05GJMlyuMlWNe2CDWhUe75EqDOx3VQKQv6QByefryHwT/Ax+5Etm0o/+2f24Xa8vR16VtBkf6mmo/bXwOoJsm90A1b+zWMUAPBOg2AYw+15MGTUKZ8GDgVkGZNLHJIE2lgsVX/SGniyHCZyTGCcWuQHVAvtm12P7QphiOvZhhX3+3rONNQeMR2FN49GFoX9FWdOpJiniOag3AjA34F7TU/g==',
+            encryptedMsg = '9fe61d13b93ee2d953da913efee6bafa6b22d111d6a04a5ca94f3b3517f452629489ce20404bf1e6c3b71aa2c42b8e08a892bdb26d67eff0c75db164c6e1c0e09aXLh2PsLwpYZXzJkOKSa2KHCnBVXA2AguO8Giwz9cm0X8+63n9zNyJSfoSiThZEMXPZPzI4AsgQNmWk9AW1E5fzi1NBhtjbtr6lIRymhUqQG1FDT+IsGwnFEKQhgkIO2MjDEFHOsWVPfaQsazBeZ4viMG/ZL2X6LWqYW/knGwRzw9W9edBtgzTIdsq3jWzAnsuK4XzAGzor1LcUDLhdHv2GhcCzjpNqNs/TkfyZrZi/KPcYBDZAU/8YEu7YpA0MO0hVcGatD1c3rIqF9DuKOJxLZKX7ILqAb5K3kTO5AZziNsTO2OeC2II2ViqRMWHsBTb+Sf4NuqOqKFLLkkf+K+2My4mIJayN/GM5BBHxKUYl+bzAyfzxDlK/Rx455iS6jRU3X8DbrAkCOKck8HfvX5TnnkpPjLM2ovjDDGeVrLFSLwY2GfuKaSw1C6a8lx3dnZUoYo0PluNVnMMMrxjSjuU0/R6t0Cznkgc6fMnXvlmhsAeMx+T5iqif1vfFIpjAvnaZbQQXvVqms9gpw4EN+jnba7tzrbUOgO96x91JtMpD5prI9CKihiIFZrCJM1BsnTcY7ZfEidEQn3gItGwW96b+OfXDOtAO1JI4aY6aN2qtMWiRTFXgFHWcPRFfDz2WehJhGzTrqyIi2sU3PWimx/S0U1ZvySX7sWRYGp8irfh9V5opcREzXruvLS7sEAbhfyOy0KwzYI3kvb0hx30PcBBI5sBxZ6TyqdwZoYwHHMFDmI2gxOKBdvOvhy3maPtGe1S/8BCYJEB8F6+S4THE2uwpfbAVBtoXzCuuVCVTRig=',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();

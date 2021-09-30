@@ -2,7 +2,7 @@
 <html class="staticrypt-html">
 <head>
     <meta charset="utf-8">
-    <title>Tablero Alcoholemia CAT</title>
+    <title>Tablero Alcoholemia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- do not cache this page -->
@@ -13,7 +13,6 @@
     <meta http-equiv="pragma" content="no-cache"/>
 
     <style>
-
         .staticrypt-hr {
             margin-top: 20px;
             margin-bottom: 20px;
@@ -70,15 +69,16 @@
             height: 100%;
         }
 
-	.staticrypt-body {
-		background-image: url('BuenosAires.jpg');
-		background-attachment: fixed;
-		color: #333;
-		margin-bottom: 1em;
-		font-family: "Arial", sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
+		.staticrypt-body {
+			background-image: url('BuenosAires.jpg');
+			background-attachment: fixed;
+			color: #333;
+			margin-bottom: 1em;
+			font-family: "Arial", sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+		}
 
         .staticrypt-instructions {
             margin-top: -1em;
@@ -116,7 +116,7 @@
 <div class="staticrypt-page">
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
-            <p class="staticrypt-title">Tablero Alcoholemia CAT</p>
+            <p class="staticrypt-title">Tablero Alcoholemia</p>
             <p></p>
         </div>
 
@@ -129,7 +129,7 @@
                    placeholder="Contraseña..."
                    autofocus/>
 
-            <input type="submit" class="staticrypt-decrypt-button" value="INGRESAR"/>
+            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
         </form>
     </div>
 
@@ -6163,12 +6163,11 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '8f1f48d024a0cd34bcb24f3586039deca5c9a332d06a39fa4ab813b40c6469a2922fdf99d3b62c0835edfd84a748c7522facbf3d9b13f9e42df282bf3b8f3719hEmdqGLFPxqRbDKkq0Lx1q+leZUNO9D/DTRj3ttkiA6AzhUwu78yX3NR5iOP11Y4PU7hOzKW7NFh08BszXKNcR1/Ccnraaz3JApqoP1uk2AyQPmA4nWuY93/8n3zSgvAa5q+i3PIkvZ9saa/As2Rd8NKP2OBVK7HQx4uNSOVStVNM0X99TT1LHmwnIH9EurR1BNcmj6UqFFGw8TSunajMjuCfoiqOvCIgQA9Job5HkA5SWCiju8zmTNbqtBavUWjCMA2rzIX2aUcO6KOFsO8aM9zO+ENXutA+EwveVOtFNGI9+V6WXAyWHLU8ys9OtX52aAQICIfGcsfHwJk79bPGCnO6GtobP+zzdIqSBRf/a/hAJhQGhdU38maa4xAYckUV7df821Uf1EERNSyVp7tYBq9rK9JFjGjjLaGg/m5LhXnvFet33gCN+T4wCePy+Jp6Fr3ABvEuH/WSyvq1MfnC+ETEPaxTEBBp8yrkg87RRpnNhMMkW9o2gkY5akGeVMr0YivuxTpIhMMZgTdemb4aiX3gCPke5KS5nzhAXZAmpfpMqSJ3NXnzfT1DmJpA5hZuqDZNNARMX8vip4Tm3qfU1X9NQ2uo4BmYu5MJprPI2/g4h/H7H9iLxyOINn+0g0cLNNm/YoepZzuLZE88BaOdgdRqm0DZ20RvuDA4FMhIPvflnOt6wNAScyknJNREMQRaOIQ55kBGMwCweEyTovFdbmFjeSNHxA5nQKBZ6yS2mL2i81yFS0Sir8nKFw33nsDgYUGpX9afL8XImRUEfOnFBa11R7tblTAgkhBoCp0l44=',
+            encryptedMsg = '4037d98c0098c6c3024a189581c3f5f8bc7790e8ef874d19e0d5f1492626633162ec625fc421760c9e9cc332cdb67acc9f0e6a29556caa1948690be85ee2f19dDRfgqlhjMEGPFc+OfJ6pLpafXrqcXPJ/1Mogma+h/ePXV9a6XZhNaOj5+Vmg7P+h6cwW4bf0ddqpdgdT85vQWWghwx6g6nx8B3SZwMUp9C0+Ob/S7KJsKzi0PlAqoZ0PjBkUSBBtoCZjd5ko/mQF6it8/IWw8/t8WpafKl/8kzC8AhoWtsbOu85DMbWciAgc9a1oFTaIibmAPxVfqjbPUrPRiKDgapL5qCIrs9gSswbbMQlvlYoJCaeQRv586FR3xbvYAKNJZ7M++OcwTUCNTJWJLfChbxTBBOIyQFHZmrbhsulO9Catvn9mbq9NSEtWrVVDRfBzaIMFHi86HbnwgtU6jlRUFXVcmruyVe+at5yu0RJIBojlQybphyTKu3tFam413mX46hT1UUNx747MOGs7lJaxD4wxLkI2oW4G9i1V/rbc6o9ifHvoDCul6/IQrmv55/tvLtxBkrl2PTezky3hR2q57DqK3ZsX2PHcFKdmk9eHN3RKYXumMgxCbeF/UX8J2efFguxMic383bf/vJuU9+x+Yu6PGpwNmd/fPhMMkeXROpLb6eVGTYWWjLoQMcf4amLc01d0RWNX4PD7jbCJXLf+B8cUD5jRSmI0QBIUcUTldimmLa7o36DJPXpVDmPwtgIdjBkEaXwgzkxOCf/ElpTD54/QTLapH7CXB/MSjZi90HEX+h2JUizjB/BeKmbV3TAkNtGq9Nxg+QBQHm4A2+6r4JDgX36djebFgsOUpUUNbrWFVdGsNqTZjtTB5aQYTjiXGNVzMThMdUAm4CFaYH/QumTNJdwu8Cf1HeHjc+0wTq6hAl6S01SU/6U2ZadOEnE8HEu31s2u/t+V6w==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
-	    
-	 
+
         if (decryptedHMAC !== encryptedHMAC) {
             alert('Contraseña Incorrecta!');
             return;
